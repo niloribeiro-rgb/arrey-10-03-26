@@ -4,26 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frases inspiradoras</title>
+    <title>usuarios</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 
 <body>
-    <!-- <input type="text" id="maisUm"> <br>
-    <button type="button" onclick="add()">adicionar</button> <br>
-    <button type="button" onclick="exibirLista()">exibir</button> <br>
-    <ul id="lista"></ul> -->
-
-    <h1>Mensagens</h1>
-    <div class="container1" id="fs"></div>
-
-    <div class="container2">
+    <h1>Cadastro de usuarios</h1>
+    <div class="inputContainer">
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario">
+        <label for="senha:">Senha:</label>
+        <input type="password" id="senha">
+        <button onclick="cadastrar()">Cadastrar</button>
     </div>
-    <button onclick="msg()">Mensagem</button>
-    <button onclick="msgRandow()">Mensagem aleatoria</button>
+
+    <button onclick="seeUsuarios()">Ver usuários</button>
+    <h1>Usuarios cadastrados</h1>
+    <table>
+        <thead>
+            <!-- table head -->
+            <tr>
+                <th>Usuário</th>
+                <th>Senha</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody id="tabela">
+            <!-- table body -->
+             <!-- botei id no table body pq nao da div -->
+
+        </tbody>
+    </table>
 </body>
 
-
 </html>
-
